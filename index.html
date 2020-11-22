@@ -1,14 +1,253 @@
-,<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Plesant Services</title>
-    <link href="main.css" type="stylesheet" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0px;
+        vertical-align: baseline;
+        text-decoration: none;
+        font-size: 100%;
+      }
+
+      h1 {
+        font-size: 4rem;
+        font-weight: 800;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      .landing-text {
+        margin-left: 10px;
+      }
+
+      .landing-text p {
+        font-size: 2rem;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .section {
+        padding: 0 20px;
+        height: 100vh;
+      }
+
+      .row-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .fullheight-container {
+        height: 100%;
+      }
+
+      .logo-image {
+        height: 200px;
+        width: 200px;
+      }
+
+      .info-container {
+        background-color: #f2f2f2;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .info-container h1 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      .card {
+        background-color: white;
+        display: flex;
+        border-radius: 20px;
+        justify-content: center;
+        max-width: 480px;
+        margin: 2rem;
+        padding: 1rem;
+      }
+
+      .card p {
+        font-size: 1.5rem;
+      }
+
+      .card a {
+        font-size: 1.5rem;
+        color: #c5342a;
+      }
+
+      .card h2 {
+      }
+
+      .learn-more {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+
+      button {
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        border-radius: 7;
+        height: 3.5rem;
+        padding: 0 1rem;
+        font-size: 1rem;
+        margin: 2px;
+        border-radius: 10px;
+        background-color: #67605c;
+        color: white;
+        transition: all 0.15s ease-in-out;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      button:active {
+        transform: scale(0.96);
+      }
+
+      .contact-us {
+        background-color: #c5342a;
+      }
+
+      li {
+        font-size: 2rem;
+        text-align: left;
+      }
+
+      .contact-section {
+        background-color: white;
+      }
+
+      .contact-section h1 {
+        text-align: center;
+      }
+
+      .contact-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-container h1 {
+        padding: 4rem;
+      }
+
+      @media (max-width: 750px) {
+        * {
+          font-size: 60%;
+        }
+
+        .logo-image {
+          height: 150px;
+          width: 150px;
+        }
+
+        .row-container {
+          flex-direction: column;
+        }
+
+        .info-container {
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Plesant Services</h1>
+    <main>
+      <div class="section">
+        <div class="row-container fullheight-container">
+          <img src="./ps_logo.jpg" alt="logo" class="logo-image" />
+          <div class="landing-text">
+            <h1>Plesant Services</h1>
+            <p>All kinds of meterial supplier</p>
+          </div>
+        </div>
+        <div class="learn-more">
+          <button>Learn more</button>
+          <button class="contact-us">Contact us</button>
+        </div>
+      </div>
+
+      <div class="section info-container">
+        <h1>We provide materials for</h1>
+        <ul>
+          <li>Safety</li>
+          <li>Hardware</li>
+          <li>Household Material</li>
+          <li>Electrical Material</li>
+          <li>Electronics Material</li>
+          <li>Chemicals, Dyes & Solvents</li>
+          <li>Sealant & Adhesive</li>
+          <li>Plumbing Material</li>
+          <li>Cleaners</li>
+          <li>Paint</li>
+          <li>Stationary</li>
+          <li>Hand & Machine Tools</li>
+          <li>Security Systems</li>
+          <li>Packaging Material</li>
+        </ul>
+      </div>
+      <div class="section contact-section">
+        <div class="contact-container">
+          <h1>Contact Us</h1>
+          <div class="row-container">
+            <div class="card">
+              <div>
+                <h2>Mr. Lakhan Sawant</h2>
+                <a href="#">+91 9595118371</a>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <h2>Mr. Abhishek Jadhav</h2>
+                <a href="#">+91 9860250205</a>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="max-width: 20rem; flex-direction: column">
+            <h2>Address:</h2>
+            <a>#113 , Patel Chamber , Near Z. P. , Trimbak Road, Nashik , 422001 , Maharashtra .</a>
+          </div>
+
+          <div class="card" style="max-width: 20rem; flex-direction: column">
+            <h2>Email us:</h2>
+            <a href="#">pleasant.services@yahoo.com</a>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
